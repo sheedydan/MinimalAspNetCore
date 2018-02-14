@@ -1,0 +1,17 @@
+﻿@page
+@using Kendo.Mvc.UI
+@addTagHelper *, Kendo.Mvc
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model MinimalAspNetCore.Mvc.Pages.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<kendo-datepicker name="monthpicker"
+                  start="CalendarView.Year"
+                  depth="CalendarView.Year"
+                  format="MMMM yyyy"
+                  value='DateTime.Parse("November 2011")'
+                  style="width: 100%;"/>

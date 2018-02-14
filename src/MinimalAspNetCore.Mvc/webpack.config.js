@@ -17,7 +17,8 @@ module.exports = function (env) {
     },
     devtool: 'eval-source-map',
     resolve: {
-      extensions: ['.ts', '.tsx', '.js', '.jsx']
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
+        alias: { jquery: 'jquery/src/jquery'}
     },
     plugins: [
       new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' })
